@@ -9,7 +9,7 @@ The scripts provide:
 - A Principal Component Analysis (PCA) workflow
 - An analysis of regression models
 
-The GIS datasets are included to complement and demonstrate the analyses.
+The GIS datasets include information about the principal components.
 
 ## Contents
 
