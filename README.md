@@ -41,7 +41,7 @@ Together, these files form the shapefile dataset with PCA-derived proxies of cro
 
 ## Citation
 If you use this repository or dataset, please cite:  
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17084000.svg)](https://doi.org/10.5281/zenodo.17084000) 
 
 ---
 
