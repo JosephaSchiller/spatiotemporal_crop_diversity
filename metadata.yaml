@@ -1,0 +1,78 @@
+title: Spatio-temporal crop diversity proxy Brandenburg
+description: 'PCA-derived proxies of crop diversity for Brandenburg, Germany (2011–2020),
+  aggregated on a 10x10 km grid. Variables include: PC1: overall crop diversity, PC2:
+  temporal vs. spatial diversity separation, grid_id (grid cell identifier 10kmx10km).'
+resource_type: Dataset
+spatial:
+  description: Federal state of Brandenburg, Germany
+  bbox:
+    west: 237217.0996
+    south: 5676608.4142
+    east: 507217.0996
+    north: 5946608.4142
+  crs:
+    epsg: .na.integer
+    wkt: |-
+      PROJCRS["unknown",
+          BASEGEOGCRS["unknown",
+              DATUM["World Geodetic System 1984",
+                  ELLIPSOID["WGS 84",6378137,298.257223563,
+                      LENGTHUNIT["metre",1]],
+                  ID["EPSG",6326]],
+              PRIMEM["Greenwich",0,
+                  ANGLEUNIT["Degree",0.0174532925199433]]],
+          CONVERSION["UTM zone 33N",
+              METHOD["Transverse Mercator",
+                  ID["EPSG",9807]],
+              PARAMETER["Latitude of natural origin",0,
+                  ANGLEUNIT["Degree",0.0174532925199433],
+                  ID["EPSG",8801]],
+              PARAMETER["Longitude of natural origin",15,
+                  ANGLEUNIT["Degree",0.0174532925199433],
+                  ID["EPSG",8802]],
+              PARAMETER["Scale factor at natural origin",0.9996,
+                  SCALEUNIT["unity",1],
+                  ID["EPSG",8805]],
+              PARAMETER["False easting",500000,
+                  LENGTHUNIT["metre",1],
+                  ID["EPSG",8806]],
+              PARAMETER["False northing",0,
+                  LENGTHUNIT["metre",1],
+                  ID["EPSG",8807]],
+              ID["EPSG",16033]],
+          CS[Cartesian,2],
+              AXIS["(E)",east,
+                  ORDER[1],
+                  LENGTHUNIT["metre",1,
+                      ID["EPSG",9001]]],
+              AXIS["(N)",north,
+                  ORDER[2],
+                  LENGTHUNIT["metre",1,
+                      ID["EPSG",9001]]]]
+  spatial_resolution: 10 km x 10 km
+temporal_coverage:
+  start: '2011'
+  end: '2020'
+variables:
+- name: PC1
+  description: Proxy for overall crop diversity
+  type: float
+- name: PC2
+  description: Proxy for temporal vs spatial crop diversity
+  type: float
+- name: grid_id
+  description: 10x10 km grid identifier
+  type: string
+provenance:
+  source: Integrated Administration and Control System (IACS), Brandenburg, 2011–2020
+  methods: Indices (Richness, Shannon diversity, Shannon evenness) aggregated by 10x10
+    km grid; PCA on indices to derive proxies.
+files:
+  shapefile: crop_diversity.shp
+license: CC-BY-4.0
+keywords:
+- crop diversity
+- Brandenburg
+- GIS
+- PCA
+- spatio-temporal
